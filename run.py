@@ -122,9 +122,13 @@ def main():
                             name_acc_to_delete = input()
                             print("\n")
                             account_to_delete = find_account(name_acc_to_delete)
-                            delete_credentials(account_to_delete)
-                            print("Deleted successfully")
-                            print("\n")
+                            if account_to_delete:
+                                delete_credentials(account_to_delete)
+                                print("Deleted successfully")
+                                print("\n")
+                            
+                            else:
+                                print("No account")
 
                         elif account == "va":
                             if display_credentials():
