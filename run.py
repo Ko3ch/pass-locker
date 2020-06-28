@@ -128,7 +128,7 @@ def main():
                                 print("\n")
                             
                             else:
-                                print("No account")
+                                print(f"There is no account by {name_acc_to_delete}")
 
                         elif account == "va":
                             if display_credentials():
